@@ -1,7 +1,7 @@
 import * as GitHubApi from "github";
 
 const debug = require("debug")("git-commit-push-via-github-api");
-const GITHUB_API_TOKEN = process.env.GITHUB_API_TOKEN;
+const GITHUB_API_TOKEN = "0bd847fa60f0a6ceca17af69533a3e61884a2d6d";
 const getReferenceCommit = function(github: GitHubApi, options: GitCommitPushOptions) {
     return new Promise((resolve, reject) => {
         github.gitdata.getReference(
